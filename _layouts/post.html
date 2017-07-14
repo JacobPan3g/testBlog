@@ -28,6 +28,23 @@ layout: default
         <article class="post-content">
           <div class="wrapper">
             {% include LessOrMore/comments-providers/uyan %}
+            
+            
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+owner: 'JacobPan3g',
+repo: 'testBlog',
+oauth: {
+client_id: '8a1e6ff22f37f6808c22',
+client_secret: '377eee8fe03e02a91d8ff2a63d6420ba705470bb',
+},
+})
+gitment.render('gitmentContainer')
+</script>
+            
           </div>
         </article>
       </div>
